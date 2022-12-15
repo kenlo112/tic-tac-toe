@@ -1,0 +1,32 @@
+state = {
+    winner
+    player-turn
+    board: [null, null, null, null, null, null, null, null, null]
+    winMessage
+}
+
+//cached elements
+boardEl
+messageEl
+player1El
+player2El
+
+
+//function
+init(){
+    state.winner = null
+    player-turn = x
+    board: [null, null, null, null, null, null, null, null, null]
+    state.winMessage = ""
+    render()
+}
+
+render(){
+    boardEl = state.board
+    messageEl = state.winMessage
+    if(stage.player-turn) = x {
+        player1El.backgroundcolor = yellow
+    } else {
+        player1El.backgroundcolor = yellow
+    }
+}
