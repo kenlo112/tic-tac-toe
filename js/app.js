@@ -1,3 +1,9 @@
+const info = {
+    "1": "red",
+    "-1": "blue",
+    "null": "white"
+};
+
 const wincombo = [
     [0, 1, 2],
     [3, 4, 5],
