@@ -13,6 +13,7 @@ td {
     /* background-color: red; */
     height: 200px;
     width: 200px;
+    font-size: 80px;
 
 }
 
@@ -34,7 +35,7 @@ table {
 button {
     margin-top: 80px;
     height: 50px;
-    width: 100px;
+    width: 200px;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -56,3 +57,9 @@ button:hover {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
+
+#result{
+    font-size: 80px;
+    margin-top: 30px;
+
+}
