@@ -58,6 +58,7 @@ function checkWinner(){
 function initialize (){
     message.innerHTML = ""
     move = 0
+    gameOver = false
     boxes.forEach(function(box){
         box.innerHTML = ""
     })
