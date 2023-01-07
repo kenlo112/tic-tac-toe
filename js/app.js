@@ -12,6 +12,7 @@ const wincombo = [
 
 let player1 = "X"
 let move = 0
+let gameOver = false
 
 let boxes = document.querySelectorAll("td");
 boxes = Array.from(boxes)
@@ -24,7 +25,7 @@ reset.addEventListener("click", initialize);
 
 boxes.forEach(function(box){
     box.addEventListener("click", function(){
-    if(box.innerText != "")
+    if(gameOver || box.innerText != "")
     return
     box.innerHTML = player1
     checkWinner()
@@ -42,11 +43,13 @@ function checkWinner(){
         })
         if(check){
             message.innerHTML = `${player1} Win !`
+            gameOver = true
             return
         }
     })
     if (move == boxes.length-1) {
         message.innerHTML = "Tie game !"
+        gameOver = true
         return
     }
 
